@@ -5,7 +5,7 @@ Last updated for the Beta 7R release
 
 ## Booting the Library
 ```lua
-local Maska = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Maska/main/source'))()
+local Maska = loadstring(game:HttpGet('https://raw.githubusercontent.com/MageMaska/MyHub/main/Script'))()
 ```
 
 ### Secure Mode
