@@ -985,7 +985,7 @@ function MaskaLibrary:CreateWindow(Settings)
 		if not Passthrough then
 			local AttemptsRemaining = math.random(2,6)
 			Maska.Enabled = false
-			local KeyUI = game:GetObjects("rbxassetid://11857823239")[1]
+			local KeyUI = game:GetObjects("rbxassetid://11857857390")[1]
 
 			if gethui then
 				KeyUI.Parent = gethui()
