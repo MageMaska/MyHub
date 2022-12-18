@@ -1,33 +1,33 @@
-# Rayfield Interface Suite
-This is the written documentation for Rayfield Interface Suite
+# Maska Interface Suite
+This is the written documentation for Maska Interface Suite
 
 Last updated for the Beta 7R release
 
 ## Booting the Library
 ```lua
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Maska = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Maska/main/source'))()
 ```
 
 ### Secure Mode
-If the game you're trying to run Rayfield Interface Suite on, is detecting or crashing when you use Rayfield Interface Suite, try using Secure Mode:
-- Place `getgenv().SecureMode = true` above the initial Rayfield loadstring
+If the game you're trying to run Maska Interface Suite on, is detecting or crashing when you use Maska Interface Suite, try using Secure Mode:
+- Place `getgenv().SecureMode = true` above the initial Maska loadstring
 
-Rayfield will now use Secure Mode and attempt to reduce detection
+Maska will now use Secure Mode and attempt to reduce detection
 - Note: This may cause some elements of the UI to look lower quality or may increase loading times slightly
 
 ### Enabling Configuration Saving
 - Enable ConfigurationSaving in the CreateWindow function
 - Choose an appropiate FileName in the CreateWindow function
 - Choose an unique flag identifier for each supported element you create
-- Place `Rayfield:LoadConfiguration()` at the bottom of all your code
+- Place `Maska:LoadConfiguration()` at the bottom of all your code
 
-Rayfield will now automatically save and load your configuration
+Maska will now automatically save and load your configuration
 
 ## Creating a Window
 ```lua
-local Window = Rayfield:CreateWindow({
-	Name = "Rayfield Example Window",
-	LoadingTitle = "Rayfield Interface Suite",
+local Window = Maska:CreateWindow({
+	Name = "Maska Example Window",
+	LoadingTitle = "Maska Interface Suite",
 	LoadingSubtitle = "by maska",
 	ConfigurationSaving = {
 		Enabled = true,
@@ -46,7 +46,7 @@ local Window = Rayfield:CreateWindow({
 		Note = "Join the discord (discord.gg/Maska)",
 		FileName = "MaskaKey",
 		SaveKey = true,
-		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Maska to get the key from
 		Key = "Hello"
 	}
 })
@@ -68,7 +68,7 @@ Section:Set("Section Example")
 
 ## Notifying the user
 ```lua
-Rayfield:Notify({
+Maska:Notify({
     Title = "Notification Title",
     Content = "Notification Content",
     Duration = 6.5,
@@ -210,10 +210,10 @@ Dropdown:Set("Option 2") -- The new option value
 
 ## Check the value of an existing element
 To check the current value of an existing element, using the variable, you can do `ElementName.CurrentValue`, if it's a keybind or dropdown, you will need to use `KeybindName.CurrentKeybind` or `DropdownName.CurrentOption`
-You can also check it via the flags from `Rayfield.Flags`
+You can also check it via the flags from `Maska.Flags`
 
 
 ## Destroying the Interface
 ```lua
-Rayfield:Destroy()
+Maska:Destroy()
 ```
