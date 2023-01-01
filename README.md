@@ -145,3 +145,39 @@ m.Magnet = gamepassid
 m["Shiny Hunter"] = gamepassid
 ```
 
+# Hoverboard
+```lua
+local nameofthehoverboard = "High Tech"
+
+
+local newname = "nameofthehoverboard"
+local descrip = "Desc "
+local speeds = 3
+local thumbnails = 11836482697
+local soundss = 11345687913
+local meshs = 11836367830
+local textures = 11836367884
+
+
+
+
+
+
+
+local donttouch = "Hoverboard Data ("..nameofthehoverboard..")"
+local meshid = game:GetService("ReplicatedStorage").Game.Hoverboards[nameofthehoverboard].Hoverboard.MeshId
+local textureid = game:GetService("ReplicatedStorage").Game.Hoverboards[nameofthehoverboard].Hoverboard.TextureID
+
+s = game:GetService("ReplicatedStorage").Game.Hoverboards[nameofthehoverboard][donttouch]
+set = require(s)
+
+set.name = newname
+set.neededDesc = descrip
+set.speed = speeds
+set.thumnail = thumbnails
+set.sounds = soundss
+
+meshid = meshs
+textureid = textures
+```
+
